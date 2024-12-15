@@ -20,8 +20,11 @@
   
 
 .container {
-  margin: auto;
-  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 body {
     font-family: "Pangolin";
@@ -32,7 +35,6 @@ body {
 
 .header-container {
   display: flex;
-  width: 1440;
   padding: 100px 160px 150px;
   background-color: #F8F8F8;
 }
@@ -40,7 +42,7 @@ body {
   font-weight: 700;
   font-size: 90px;
   margin-bottom: 50px;
-  line-height: 25px;
+  line-height: 60px;
   color: #1d1b1b;
 }
 .header-description {
@@ -77,13 +79,6 @@ body {
   font-size: 20px;
   line-height: 20px;
 }
-.cat-bender {
-display: block;
-width: 600px;
-height: 400px;
-padding-top: 50px;
-padding-left: 20px;
-}
 .popular-title {
   text-align: center;
   font-weight: lighter;
@@ -101,185 +96,28 @@ padding-left: 20px;
   height: 500px;
   background-color: #ecbd8a;
   border: 5px solid #eb6a6a;
-  margin: 0 20px auto;
 }
-  .item-img {
-   margin: 0 auto;
-}
-.luna-cat {
+.photo-cat {
   width: 380px;
   height: 380px;
 }
-.luna-title {
+.cats-title {
   font-weight: bolder;
-  margin-bottom: 10px;
-  text-align: center;
 }
-.luna-description {
+.cats-description {
   width: 450px;
-  margin: 0 auto 30px;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
   
-}
-.watch-link:hover {
-  background-color: blue;
-}
-.watch-wrapper {
-  width: 150px;
-  margin: 0 auto 30px;
-  text-align: center;
 }
 .watch-wrapper {
   display: flex;
-}
-.watch-link1 {
-  display: block;
   width: 150px;
-  height: 40px;
-  background-color:#1d1b1b;
-  color: #F8F8F8;
-  text-decoration: none;
   text-align: center;
-  font-size: 20px;
-  line-height: 20px;
-  transition-duration: 1s;
-  }
-  .watch-link1:hover {
-    background-color: blue;
-  }
-  
-.fan-header1 {
-  width: 150px;
-  height: 40px;
-  background-color:#FFFFFF;
-  color: #1d1b1b;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-  line-height: 20px;
-}
-.item-img2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-  height: 500px;
-  background-color: #ecbd8a;
-  border: 5px solid #eb6a6a;
-  margin: 0 20px auto;
-}
-  .item-img2 {
-   margin: 0 auto;
-}
-.fresh-cat {
-  width: 380px;
-  height: 380px;
-}
-.fresh-title {
-  font-weight: bolder;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.fresh-description {
-  width: 450px;
-  margin: 0 auto 30px;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
-  
-}
-.watch-wrapper2 {
-  width: 150px;
-  margin: 0 auto;
-  text-align: center;
-}
-.watch-wrapper2 {
-  display: flex;
-}
-.watch-link2 {
-  display: block;
-  width: 150px;
-  height: 40px;
-  background-color:#1d1b1b;
-  color: #F8F8F8;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-  line-height: 20px;
-  transition-duration: 1s;
-  }
-  .watch-link2:hover {
-    background-color: blue;
-  }
-  
-.fan-header2 {
-  width: 150px;
-  height: 40px;
-  background-color:#FFFFFF;
-  color: #1d1b1b;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-  line-height: 20px;
 }
 
-
-.item-img3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-  height: 500px;
-  background-color: #ecbd8a;
-  border: 5px solid #eb6a6a;
-  margin: 0 20px auto;
-}
-  .item-img3 {
-   margin: 0 auto;
-}
-.bender-cat {
-  width: 380px;
-  height: 380px;
-}
-.bender-title {
-  font-weight: bolder;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.bender-description {
-  width: 450px;
-  margin: 0 auto 30px;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
-  
-}
-.watch-wrapper3 {
-  width: 150px;
-  margin: 0 auto;
-  text-align: center;
-}
-.watch-wrapper3 {
-  display: flex;
-}
-.watch-link3 {
-  display: block;
-  width: 150px;
-  height: 40px;
-  background-color:#1d1b1b;
-  color: #F8F8F8;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-  line-height: 20px;
-  transition-duration: 1s;
-  }
-  .watch-link3:hover {
-    background-color: blue;
-  }
-  .watch-link3 {
+  .animate {
     position: absolute;
   animation-name: link-cat;
   animation-duration: 10s;
@@ -302,13 +140,3 @@ padding-left: 20px;
     }
   }
   
-.fan-header3 {
-  width: 150px;
-  height: 40px;
-  background-color:#FFFFFF;
-  color: #1d1b1b;
-  text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-  line-height: 20px;
-}
